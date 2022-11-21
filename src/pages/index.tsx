@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   const { data, isIdle, isError, isLoading, isSuccess, sendTransaction } =
     useSendTransaction({
       request: {
-        to: 'yanniksood.eth',
+        to: '0x72031007791262f7af906493744332ffb3a8ffd9',
         value: BigNumber.from('10000000000000000'), // .1 ETH
       },
     })
