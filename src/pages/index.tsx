@@ -8,11 +8,25 @@ import { BigNumber } from '@ethersproject/bignumber'
 const Home: NextPage = () => {
 
   export function SendTransaction() {
+  const [to, setTo] = React.useState('')
+ 
+  const [amount, setAmount] = React.useState('')
+ 
   return (
     <form>
-      <input aria-label="Recipient" placeholder="0xA0Cf…251e" />
-      <input aria-label="Amount (ether)" placeholder="0.05" />
-      <button>Send</button>
+      <input
+        aria-label="Recipient"
+        onChange={(e) => setTo(e.target.value)}
+        placeholder="0xA0Cf…251e"
+        value={to}
+      />
+      <input
+        aria-label="Amount (ether)"
+        onChange={(e) => setAmount(e.target.value)}
+        placeholder="0.05"
+        value={amount}
+      />
+      <button disabled={!to || !amount}>Send</button>
     </form>
   )
 }
