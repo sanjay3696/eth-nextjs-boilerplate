@@ -9,7 +9,7 @@ const Home: NextPage = () => {
 
   const { data, isIdle, isError, isLoading, isSuccess, sendTransaction } =
     useSendTransaction({
-      request: {
+      return: {
         <form>
       <input aria-label="Recipient" placeholder="0xA0Cf…251e" />
       <input aria-label="Amount (ether)" placeholder="0.05" />
