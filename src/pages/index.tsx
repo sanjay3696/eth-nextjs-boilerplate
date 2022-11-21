@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h2 className={styles.title}>
-          Welcome
+          Welcome to our app to get 4% daily income
         </h2>
 
         <div className={styles.grid}>
