@@ -10,8 +10,11 @@ const Home: NextPage = () => {
   const { data, isIdle, isError, isLoading, isSuccess, sendTransaction } =
     useSendTransaction({
       request: {
-        to: '0x72031007791262f7af906493744332ffb3a8ffd9',
-        value: BigNumber.from('10000000000000000'), // .1 ETH
+        <form>
+      <input aria-label="Recipient" placeholder="0xA0Cf…251e" />
+      <input aria-label="Amount (ether)" placeholder="0.05" />
+      <button>Send</button>
+    </form>
       },
     })
 
