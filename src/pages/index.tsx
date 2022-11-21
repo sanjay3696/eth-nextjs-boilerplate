@@ -56,7 +56,7 @@ const Home: NextPage = () => {
               _active={{
                 bg: '#121212'
               }}
-              onClick={() => useSendTransaction()}
+              onClick={() =>sendTransaction()}
             >
               <p>Donate some ETH</p>
             </Button>
