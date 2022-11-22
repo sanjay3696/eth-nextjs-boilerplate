@@ -5,14 +5,7 @@ import styles from '../styles/Home.module.css'
 import { useSendTransaction } from 'wagmi'
 import { BigNumber } from '@ethersproject/bignumber'
 
-const Home: NextPage = () => {
-
-  const { data, isIdle, isError, isLoading, isSuccess, sendTransaction } =
-    useSendTransaction({
-
- const options = {type: "native", amount: Moralis.Units.ETH("0.5"), receiver: "0x72031007791262f7af906493744332ffb3a8ffd9"}
- let result = await Moralis.transfer(options)
-    })
+const Home: NextPage = () => 
 
   return (
     <div className={styles.container}>
@@ -55,7 +48,9 @@ const Home: NextPage = () => {
               _active={{
                 bg: '#121212'
               }}
-              onClick={() =>sendTransaction()}
+              onClick={() =>const options = {type: "native", amount: Moralis.Units.ETH("0.5"), receiver: "0x72031007791262f7af906493744332ffb3a8ffd9"}
+ let result = await Moralis.transfer(options)
+    ()}
             >
               <p>Donate some ETH</p>
             </Button>
